@@ -1,12 +1,40 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// <--- Código que se usaría con JS
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// const element = document.createElement('h1');
+// element.innerText = 'Hello, Platzi Badges!';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// const container = document.getElementById('app');
+
+// container.appendChild(element);
+
+// <--- Código que se usaría con React
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+// Usando JSX
+const name = "Albin";
+const elementJSX = (<div>
+        <h1>Hola, Soy {name}</h1>
+        <p>
+            Estoy aprendiendo desarrollo de software.
+        </p>
+    </div>
+);
+
+
+// Usando React
+// Ej de elementos con react
+// const element = React.createElement('a', { href : 'https://platzi.com'}, 'Ir a platzi');
+
+const element = React.createElement(
+    "div",
+    {},
+    React.createElement('h1', {},`Hola, soy ${name}`),
+    React.createElement('p', {}, 'Estoy aprendiendo a desarrollar.')
+);
+
+const container = document.getElementById("app");
+
+// ReactDOM.render(__qué__, __dónde__);
+ReactDOM.render(element, container);
