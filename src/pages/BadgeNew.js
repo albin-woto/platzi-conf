@@ -16,13 +16,7 @@ class BadgeNew extends React.Component {
   } };
 
   handleChange = e => {
-    // Lo comentado sería una forma de resolver que el form no se reemplace con cada campo llenado, la otra es  con un spread
-    // const nextForm = this.state.form;
-    // nextForm[e.target.name] = e.target.value;
-
     this.setState({
-      // form: nextForm
-
       form: {
         ...this.state.form,
         [e.target.name]: e.target.value

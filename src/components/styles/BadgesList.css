@@ -1,0 +1,27 @@
+.BadgesListItem {
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px rgb(192, 192, 192);
+  display: flex;
+  align-items: center;
+}
+
+.Badges__twitter-logo {
+  color: rgb(52, 167, 243);
+}
+
+
+.Badges__twitter-logo img{
+  height: 26px;
+  width: 26px;
+}
+
+.Badges__avatar {
+  border-radius: 50%;
+  margin: 0 1rem;
+  background: #a3a3a3;
+  width: 80px;
+  height: 80px;
+}
