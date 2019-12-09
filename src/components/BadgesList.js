@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import tw_logo from "../images/twitter-logo.svg";
-import "./styles/BadgesList.css";
+import tw_logo from '../images/twitter-logo.svg';
+import './styles/BadgesList.css';
 
 class BadgesListItem extends React.Component {
   render() {

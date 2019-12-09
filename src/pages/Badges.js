@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom"; 
+import React from 'react';
+import { Link } from 'react-router-dom'; 
 
-import "./styles/Badges.css";
-import confLogo from "../images/badge-header.svg";
-import BadgesList from "../components/BadgesList";
+import './styles/Badges.css';
+import confLogo from '../images/badge-header.svg';
+import BadgesList from '../components/BadgesList';
 
 class Badges extends React.Component {
   state = {
