@@ -6,10 +6,9 @@
   min-height: 100vh;
 }
 
-
 .PageLoading {
   border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #1A2F3B; /* Blue */
+  border-top: 16px solid #1a2f3b; /* Dark Blue */
   border-radius: 50%;
   width: 120px;
   height: 120px;
