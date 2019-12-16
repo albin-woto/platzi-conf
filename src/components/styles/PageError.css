@@ -1,0 +1,14 @@
+.PageError {
+  background: url("../../images/stars.svg"), #1B1B25;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.PageError-title {
+  font-size: 100px;
+}
