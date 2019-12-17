@@ -29,7 +29,7 @@ class BadgeNew extends React.Component {
     return (
       <React.Fragment>
         <div className="BadgeNew__hero">
-          <img className="img-fluid" src={header} alt="Logo" />
+          <img className="BadgeNew__hero-image" src={header} alt="Logo" />
         </div>
         <div className="container">
           <div className="row">

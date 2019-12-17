@@ -4,7 +4,7 @@ import './styles/PageLoading.css';
 
 function PageLoading() {
   return (
-    <div className="container">
+    <div className="Loading__container">
       <div className="PageLoading"></div>
     </div>
   );
