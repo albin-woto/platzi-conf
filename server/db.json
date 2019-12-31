@@ -68,6 +68,22 @@
       "jobTitle": "Jugador",
       "twitter": "cristiano",
       "id": "48vp6WC"
+    },
+    {
+      "firstName": "Carolynn",
+      "lastName": "Kauffman",
+      "email": "ckauffman@job.com",
+      "jobTitle": "Lawyer",
+      "twitter": "ckauffman",
+      "id": "1CqMg34"
+    },
+    {
+      "firstName": "Marcelo",
+      "lastName": "Perez",
+      "email": "mp@example.com",
+      "jobTitle": "Frontend Developer",
+      "twitter": "mperez",
+      "id": "IoIbvYN"
     }
   ]
 }
