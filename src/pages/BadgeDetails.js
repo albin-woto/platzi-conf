@@ -7,18 +7,7 @@ import confLogo from '../images/platziconf-logo.svg';
 import Badge from '../components/Badge';
 import DeleteBadgeModal from '../components/DeleteBadgeModal';
 
-function useIncreaseCount(max) {
-  const [count, setCount] = React.useState(0);
-
-  if (count > max) {
-    setCount(0);
-  }
-
-  return [count, setCount];
-}
-
 export default function BadgeDetails(props) {
-  const [count, setCount] = useIncreaseCount(5);
   const badge = props.badge;
 
   return (
@@ -50,14 +39,6 @@ export default function BadgeDetails(props) {
           </div>
           <div className="col actions">
             <h2>Actions</h2>
-            <button
-              onClick={() => {
-                setCount(count + 1);
-              }}
-              className="btn btn-primary"
-            >
-              Increase count: {count}
-            </button>
             <Link className="btn btn-primary" to={`/badges/${badge.id}/edit`}>
               Edit
             </Link>
