@@ -3,6 +3,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Webpack = require('webpack');
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const TerserJSPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -16,6 +19,12 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+  },
+  optimization: {
+    minimizer: [
+      new TerserJSPlugin(),
+      new OptimizeCSSAssetsPlugin()
+    ]
   },
   module: {
     rules: [
@@ -34,6 +43,8 @@ module.exports = {
           loader: 'url-loader',
           options: {
             limit: 1000,
+            name: '[hash].[ext]',
+            outputPath: 'assets'
           },
         },
       },
@@ -44,8 +55,8 @@ module.exports = {
       template: path.resolve(__dirname, './public/index.html'),
     }),
     new MiniCssExtractPlugin({
-      filename: 'assets/[name].css',
-      chunkFilename: 'css/[id].css'
+      filename: 'css/[name].[hash].css',
+      chunkFilename: 'css/[id].[hash].css'
     }),
     new Webpack.DllReferencePlugin({
       manifest: require('./modules-manifest.json'),
@@ -55,6 +66,9 @@ module.exports = {
       filepath: path.resolve(__dirname, 'dist/script/*.dll.js'),
       outputPath: 'script',
       publicPath: 'http://localhost:3001/sctipt'
+    }),
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['**/app.*']
     })
   ],
 };

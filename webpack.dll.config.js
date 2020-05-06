@@ -1,5 +1,6 @@
 const path = require('path');
 const Webpack = require('webpack');
+const TerserJSPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -12,8 +13,13 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'script/[name].[id].dll.js',
+    filename: 'script/[name].[hash].dll.js',
     library: '[name]'
+  },
+  optimization: {
+    minimizer: [
+      new TerserJSPlugin(),
+    ]
   },
   plugins: [
     new Webpack.DllPlugin({
