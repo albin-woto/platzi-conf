@@ -7,9 +7,9 @@ function PageError(props) {
   return (
     <div className="PageError">
       <h1 className="PageError-title">{props.error.message}</h1>
-      <p>¡Ups! Parece que hubo un error</p>
+      <p>¡Ups! An error has ocurred</p>
       <Link className="btn btn-primary" to="/">
-        Volver a la página principal
+        Home
       </Link>
     </div>
   );

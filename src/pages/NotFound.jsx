@@ -7,9 +7,9 @@ function NotFound() {
   return (
     <div className="Redirect">
       <h1 className="Redirect-title">404: Not Found</h1>
-      <p>¡Ups! La página solicitada no fue encontrada</p>
+      <p>¡Ups! Page Not Found</p>
       <Link className="btn btn-primary" to="/">
-        Volver a la página principal
+        Home
       </Link>
     </div>
   );
