@@ -14,7 +14,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'script/[name].js',
-    publicPath: 'http://localhost:3001/',
     chunkFilename: 'script/[id].[chunkhash].js'
   },
   resolve: {
@@ -65,7 +64,6 @@ module.exports = {
     new AddAssetHtmlPlugin({
       filepath: path.resolve(__dirname, 'dist/script/*.dll.js'),
       outputPath: 'script',
-      publicPath: 'http://localhost:3001/sctipt'
     }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ['**/app.*']
