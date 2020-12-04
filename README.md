@@ -5,7 +5,7 @@ Disclaimer! This is a practice project only. Bootstrap and API code was taken fr
 
 ---
 
-The site was deplyed in Vercel, you can see it [here.](https://platzi-conf-three.vercel.app/badges/new)  
+The site was deplyed in Vercel, you can see it [here.](https://platzi-conf-three.vercel.app/)  
 Because I'm currently using [My JSON Server](https://my-json-server.typicode.com/) as a fake online REST, the changes in the 'database' aren't permanent. The next step is to connect the app to a real DB 🚀.
 
 ---
@@ -51,9 +51,9 @@ Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
 
 #### `npm run build-dll`
 
-Builds the dlls files for production to the `dist` folder.
+Builds the dlls files for production into the `dist` folder.
 
 #### `npm run build`
 
-Builds the app for production to the `dist` folder.
+Builds the app for production into the `dist` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
