@@ -1,4 +1,5 @@
-const BASE_URL = 'http://localhost:3001';
+// If I use the app locally, I have to change it to localhost:3001 as configured in package.json's server script.
+const BASE_URL = 'https://my-json-server.typicode.com/albin-woto/platzi-conf-db';
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const randomNumber = (min = 0, max = 1) =>
