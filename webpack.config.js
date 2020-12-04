@@ -14,16 +14,14 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'script/[name].js',
-    chunkFilename: 'script/[id].[chunkhash].js'
+    chunkFilename: 'script/[id].[chunkhash].js',
+    publicPath: 'https://platzi-conf-three.vercel.app/',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
   optimization: {
-    minimizer: [
-      new TerserJSPlugin(),
-      new OptimizeCSSAssetsPlugin()
-    ]
+    minimizer: [new TerserJSPlugin(), new OptimizeCSSAssetsPlugin()],
   },
   module: {
     rules: [
@@ -43,7 +41,7 @@ module.exports = {
           options: {
             limit: 1000,
             name: '[hash].[ext]',
-            outputPath: 'assets'
+            outputPath: 'assets',
           },
         },
       },
@@ -55,18 +53,19 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[hash].css',
-      chunkFilename: 'css/[id].[hash].css'
+      chunkFilename: 'css/[id].[hash].css',
     }),
     new Webpack.DllReferencePlugin({
       manifest: require('./modules-manifest.json'),
-      context: path.resolve(__dirname, 'src')
+      context: path.resolve(__dirname, 'src'),
     }),
     new AddAssetHtmlPlugin({
       filepath: path.resolve(__dirname, 'dist/script/*.dll.js'),
       outputPath: 'script',
+      publicPath: 'https://platzi-conf-three.vercel.app/sctipt'
     }),
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['**/app.*']
-    })
+      cleanOnceBeforeBuildPatterns: ['**/app.*'],
+    }),
   ],
 };
