@@ -51,9 +51,9 @@ Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
 
 #### `npm run build-dll`
 
-Builds the dlls files for production to the `dist` folder.
+Builds the dlls files for production into the `dist` folder.
 
 #### `npm run build`
 
-Builds the app for production to the `dist` folder.
+Builds the app for production into the `dist` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
