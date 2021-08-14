@@ -20,7 +20,7 @@ A JavaScript library for building user interfaces.
 
 <a href="https://getbootstrap.com/"><img src="https://v5.getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png" alt="bootstrap-logo" height="24px"></a>
 Bootstrap  
-Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugin
+Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugin.
 
 <a href="https://webpack.js.org/"><img src="https://raw.githubusercontent.com/webpack/media/master/logo/icon.png" alt="webpack-logo" height="24px"></a>
 Webpack  
