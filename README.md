@@ -12,7 +12,7 @@ Because I'm currently using [My JSON Server](https://my-json-server.typicode.com
 
 ### Stack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with: [Create React App](https://github.com/facebook/create-react-app).
 
 <a href="https://reactjs.org/"><img src="https://raw.githubusercontent.com/albin-woto/blog-redux/master/public/react.png" alt="react-logo" height="24px"></a>
 React  
